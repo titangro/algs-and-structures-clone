@@ -1,0 +1,20 @@
+{
+  "name": "algs-and-structures-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/titangro/algs-and-structures-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/titangro/algs-and-structures-clone/issues"
+  },
+  "homepage": "https://github.com/titangro/algs-and-structures-clone#readme"
+}
