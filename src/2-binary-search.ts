@@ -12,7 +12,7 @@ export function binarySearch(array: number[], item: number) {
         if (array[middle] === item) {
             found = true;
             position = middle;
-            console.log('current count = ' + count);
+            console.log('binarySearch current count = ' + count);
             return position;
         }
         if (item < array[middle]) {
@@ -21,6 +21,6 @@ export function binarySearch(array: number[], item: number) {
             start = middle + 1;
         }
     }
-    console.log('max count = ' + count);
+    console.log('binarySearch max count = ' + count);
     return position;
 }
