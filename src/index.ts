@@ -4,6 +4,7 @@ import { selectionSort } from './3-selection-sort';
 import { bubbleSort } from './4-bubble-sort';
 import { quickSort } from './5-quick-sort';
 import { factorial, fibonachi } from './6-reqursion';
+import { breadthSearch, graph } from './7-poisk-v-shirinu';
 
 // линейный поиск
 const randomArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11]; // count = 11 - длине массива
@@ -44,3 +45,8 @@ console.log('quickSort ->', quickSort(quickSortArray)); // O(log2n*n)
 // рекурсия на примере факториала и фибоначи
 console.log('factorial -> ', factorial(-4));
 console.log('fibonachi -> ', fibonachi(8));
+
+// графы
+
+// поиск в ширину
+console.log('breadthSearch ->', breadthSearch(graph, 'a', 'g'));
