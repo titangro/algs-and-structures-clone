@@ -4,7 +4,12 @@ import { selectionSort } from './3-selection-sort';
 import { bubbleSort } from './4-bubble-sort';
 import { quickSort } from './5-quick-sort';
 import { factorial, fibonachi } from './6-reqursion';
-import { breadthSearch, graph } from './7-poisk-v-shirinu';
+import {
+    breadthSearch,
+    graph as breadthSearchGraph,
+} from './7-poisk-v-shirinu';
+import { matrix } from './8-matrix-smeznosti';
+import { shortPath, graph as shortPathGraph } from './9-algoritm-dijkstra';
 
 // линейный поиск
 const randomArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11]; // count = 11 - длине массива
@@ -49,4 +54,10 @@ console.log('fibonachi -> ', fibonachi(8));
 // графы
 
 // поиск в ширину
-console.log('breadthSearch ->', breadthSearch(graph, 'a', 'g'));
+console.log('breadthSearch ->', breadthSearch(breadthSearchGraph, 'a', 'g'));
+
+// матрица смежности
+console.log('matrix ->', matrix);
+
+// поиск кратчайшего пути в графе
+console.log('shortPath ->', shortPath(shortPathGraph, 'a', 'g'));
