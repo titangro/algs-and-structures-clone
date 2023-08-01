@@ -2,6 +2,8 @@ import { linearSearch } from './1-linear-search';
 import { binarySearch, recursiveBinarySearch } from './2-binary-search';
 import { selectionSort } from './3-selection-sort';
 import { bubbleSort } from './4-bubble-sort';
+import { quickSort } from './5-quick-sort';
+import { factorial, fibonachi } from './6-reqursion';
 
 // линейный поиск
 const randomArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11]; // count = 11 - длине массива
@@ -30,3 +32,15 @@ const bubbleSortArray = [
 ];
 // сортировка пузырьком
 console.log('bubbleSort ->', bubbleSort(bubbleSortArray)); // O(n*n)
+
+// быстрая сортировка или Хоаро
+const quickSortArray = [
+    0, 3, 2, 5, 6, 8, 23, 9, 4, 2, 1, 2, 9, 6, 4, 1, 7, -1, -5, 23, 6, 2, 35, 6,
+    3, 32, 9, 4, 2, 1, 2, 9, 6, 4, 1, 7, -1, -5, 23, 9, 4, 2, 1, 2, 9, 6, 4, 1,
+    7, -1, -5, 23,
+];
+console.log('bubbleSort ->', bubbleSort(quickSort(quickSortArray))); // O(n*log2n)
+
+// рекурсия на примере факториала и фибоначи
+console.log('factorial -> ', factorial(-4));
+console.log('fibonachi -> ', fibonachi(8));
