@@ -1,5 +1,5 @@
 import { linearSearch } from './1-linear-search';
-import { binarySearch } from './2-binary-search';
+import { binarySearch, recursiveBinarySearch } from './2-binary-search';
 import { selectionSort } from './3-selection-sort';
 
 // линейный поиск
@@ -9,6 +9,11 @@ console.log('linearSearch ->', linearSearch(randomArray, 111)); // O(n)
 // бинарный поиск
 const sequentialArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 console.log('binarySearch ->', binarySearch(sequentialArray, 20)); // O(log2n)
+// вариант через рекурсию
+console.log(
+    'recursiveBinarySearch -> ',
+    recursiveBinarySearch(sequentialArray, 0, 0, sequentialArray.length),
+);
 
 // сортировка выбором
 const selectionSortArray = [
