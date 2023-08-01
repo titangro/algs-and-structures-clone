@@ -39,7 +39,7 @@ const quickSortArray = [
     3, 32, 9, 4, 2, 1, 2, 9, 6, 4, 1, 7, -1, -5, 23, 9, 4, 2, 1, 2, 9, 6, 4, 1,
     7, -1, -5, 23,
 ];
-console.log('bubbleSort ->', bubbleSort(quickSort(quickSortArray))); // O(n*log2n)
+console.log('quickSort ->', quickSort(quickSortArray)); // O(log2n*n)
 
 // рекурсия на примере факториала и фибоначи
 console.log('factorial -> ', factorial(-4));
