@@ -10,6 +10,7 @@ import {
 } from './7-poisk-v-shirinu';
 import { matrix } from './8-matrix-smeznosti';
 import { shortPath, graph as shortPathGraph } from './9-algoritm-dijkstra';
+import { recursive, tree } from './10-tree-algs';
 
 // линейный поиск
 const randomArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11]; // count = 11 - длине массива
@@ -61,3 +62,8 @@ console.log('matrix ->', matrix);
 
 // поиск кратчайшего пути в графе
 console.log('shortPath ->', shortPath(shortPathGraph, 'a', 'g'));
+
+// деревья
+
+// рекурсивный обход дерева
+console.log('recursive ->', recursive(tree));
