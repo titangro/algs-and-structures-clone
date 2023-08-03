@@ -13,6 +13,7 @@ import { shortPath, graph as shortPathGraph } from './9-algoritm-dijkstra';
 import { iterationTree, recursiveTree, tree } from './10-tree-algs';
 import { cashFunction, factorialIteration } from './11-cash';
 import { LinkedList } from './12-linked-list';
+import { BinaryTree } from './13-binary-tree';
 
 // линейный поиск
 const randomArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11]; // count = 11 - длине массива
@@ -90,3 +91,13 @@ list.add(5);
 list.add(7);
 
 console.log('LinkedList print ->', list.print(), ', size -> ', list.getSize());
+
+// бинарное дерево
+const binaryTree = new BinaryTree();
+binaryTree.add(5);
+binaryTree.add(2);
+binaryTree.add(6);
+binaryTree.add(2);
+binaryTree.add(1);
+binaryTree.print();
+// console.log('BinaryTree print ->', binaryTree.print());
