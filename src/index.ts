@@ -10,7 +10,8 @@ import {
 } from './7-poisk-v-shirinu';
 import { matrix } from './8-matrix-smeznosti';
 import { shortPath, graph as shortPathGraph } from './9-algoritm-dijkstra';
-import { recursive, tree } from './10-tree-algs';
+import { iterationTree, recursiveTree, tree } from './10-tree-algs';
+import { cashFunction, factorialIteration } from './11-cash';
 
 // линейный поиск
 const randomArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11]; // count = 11 - длине массива
@@ -49,7 +50,7 @@ const quickSortArray = [
 console.log('quickSort ->', quickSort(quickSortArray)); // O(log2n*n)
 
 // рекурсия на примере факториала и фибоначи
-console.log('factorial -> ', factorial(-4));
+console.log('factorial -> ', factorial(4));
 console.log('fibonachi -> ', fibonachi(8));
 
 // графы
@@ -66,4 +67,15 @@ console.log('shortPath ->', shortPath(shortPathGraph, 'a', 'g'));
 // деревья
 
 // рекурсивный обход дерева
-console.log('recursive ->', recursive(tree));
+console.log('recursiveTree ->', recursiveTree(tree));
+// итеративный обход дерева
+console.log('iterationTree ->', iterationTree(tree));
+
+// кеш функция
+const cachedFactorial = cashFunction(factorial);
+console.log('cachedFactorial 3 ->', cachedFactorial(3));
+console.log('cachedFactorial 5 ->', cachedFactorial(5));
+console.log('cachedFactorial 3 ->', cachedFactorial(3));
+
+// итеративный факториал
+console.log('iterationTree ->', factorialIteration(6));

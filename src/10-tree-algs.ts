@@ -43,23 +43,34 @@ export const tree: ITreeBranch[] = [
     },
 ];
 
-export function recursive(tree?: ITreeBranch[]) {
+export function recursiveTree(tree?: ITreeBranch[]) {
     if (!tree) {
         return 0;
     }
 
     let sum = 0;
     tree.forEach((node) => {
-        sum += node.value + recursive(node.children);
+        sum += node.value + recursiveTree(node.children);
     });
 
     return sum;
 }
 
-export function iteration(tree: ITreeBranch[]) {
+export function iterationTree(tree: ITreeBranch[]) {
     if (!tree.length) {
         return 0;
     }
-    let sul = 0;
-    let stack = [];
+    let sum = 0;
+    let stack: ITreeBranch[] = [];
+
+    tree.forEach((node) => stack.push(node));
+    while (stack.length) {
+        const node = stack.pop();
+        sum += node?.value || 0;
+        if (node?.children) {
+            node.children.forEach((node) => stack.push(node));
+        }
+    }
+
+    return sum;
 }

@@ -6,7 +6,7 @@ export function factorial(n: number): number {
     }
 
     if (n < 0) {
-        return n * factorial(n + 1);
+        throw new Error('Число n должно быть положительным');
     }
 
     return n * factorial(n - 1);
