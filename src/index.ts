@@ -14,6 +14,7 @@ import { iterationTree, recursiveTree, tree } from './10-tree-algs';
 import { cashFunction, factorialIteration } from './11-cash';
 import { LinkedList } from './12-linked-list';
 import { BinaryTree } from './13-binary-tree';
+import { map, set } from './15-set-map';
 
 // линейный поиск
 const randomArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11]; // count = 11 - длине массива
@@ -101,3 +102,18 @@ binaryTree.add(2);
 binaryTree.add(1);
 binaryTree.print();
 // console.log('BinaryTree print ->', binaryTree.print());
+
+// Map пример
+const objKey = { id: 5 };
+map.set(objKey, 'anything');
+console.log('value from Map by key of object objKey -> ', map.get(objKey));
+
+// Set пример
+set.add(5);
+set.add(5);
+set.add(5);
+set.add(5);
+set.add(5);
+set.add(4);
+set.add(3);
+console.log(set);
