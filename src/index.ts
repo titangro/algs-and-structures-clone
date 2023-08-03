@@ -12,6 +12,7 @@ import { matrix } from './8-matrix-smeznosti';
 import { shortPath, graph as shortPathGraph } from './9-algoritm-dijkstra';
 import { iterationTree, recursiveTree, tree } from './10-tree-algs';
 import { cashFunction, factorialIteration } from './11-cash';
+import { LinkedList } from './12-linked-list';
 
 // линейный поиск
 const randomArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11]; // count = 11 - длине массива
@@ -79,3 +80,13 @@ console.log('cachedFactorial 3 ->', cachedFactorial(3));
 
 // итеративный факториал
 console.log('iterationTree ->', factorialIteration(6));
+
+// связанный список
+const list = new LinkedList();
+list.add(5);
+list.add(3);
+list.add(2);
+list.add(5);
+list.add(7);
+
+console.log('LinkedList print ->', list.print(), ', size -> ', list.getSize());
