@@ -2,6 +2,7 @@ import { fibonachi, iterationFibonachi } from './1-fibonachi';
 import { polindrom, polindromBySplit } from './2-polindrom';
 import { calcConsole } from './3-func';
 import { cityDateToArray, concerts } from './4-city-date';
+import { matrix, perimetr } from './5-perimtr';
 
 export const tasks = () => {
     // fibonachi
@@ -15,6 +16,9 @@ export const tasks = () => {
     // carring
     calcConsole();
 
-    // cityDateToArray
+    // cityDateToArray O(n*log2n)
     console.log('cityDateToArray -> ', cityDateToArray(concerts));
+
+    // perimetr
+    console.log('perimetr -> ', perimetr(matrix));
 };
