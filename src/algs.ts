@@ -13,6 +13,8 @@ import { shortPath, graph as shortPathGraph } from './9-algoritm-dijkstra';
 import { iterationTree, recursiveTree, tree } from './10-tree-algs';
 import { cashFunction, factorialIteration } from './11-cash';
 import { LinkedList } from './12-linked-list';
+import { BinaryTree } from './13-binary-tree';
+import { map, set } from './14-set-map';
 
 export const algs = () => {
     // линейный поиск
@@ -101,4 +103,29 @@ export const algs = () => {
         ', size -> ',
         list.getSize(),
     );
+
+    // бинарное дерево
+    const binaryTree = new BinaryTree();
+    binaryTree.add(5);
+    binaryTree.add(2);
+    binaryTree.add(6);
+    binaryTree.add(2);
+    binaryTree.add(1);
+    binaryTree.print();
+    // console.log('BinaryTree print ->', binaryTree.print());
+
+    // Map пример
+    const objKey = { id: 5 };
+    map.set(objKey, 'anything');
+    console.log('value from Map by key of object objKey -> ', map.get(objKey));
+
+    // Set пример
+    set.add(5);
+    set.add(5);
+    set.add(5);
+    set.add(5);
+    set.add(5);
+    set.add(4);
+    set.add(3);
+    console.log(set);
 };
