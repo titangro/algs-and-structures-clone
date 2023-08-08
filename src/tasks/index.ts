@@ -3,6 +3,7 @@ import { polindrom, polindromBySplit } from './2-polindrom';
 import { calcConsole } from './3-func';
 import { cityDateToArray, concerts } from './4-city-date';
 import { matrix, perimetr } from './5-perimtr';
+import { withoutRepeat, arr } from './6-without-repeat';
 
 export const tasks = () => {
     // fibonachi
@@ -19,6 +20,9 @@ export const tasks = () => {
     // cityDateToArray O(n*log2n)
     console.log('cityDateToArray -> ', cityDateToArray(concerts));
 
-    // perimetr
+    // perimetr O(N*N)
     console.log('perimetr -> ', perimetr(matrix));
+
+    // withoutRepeat O(N)
+    console.log('withoutRepeat -> ', withoutRepeat(arr));
 };
