@@ -2,7 +2,7 @@
 // aabaB - false
 // aZazA - true
 
-export function polindrom(word: string): boolean {
+export function polindrom(word: string) {
     word = word.toLocaleLowerCase();
 
     for (let i = 0; i < word.length / 2; i++) {
@@ -12,4 +12,9 @@ export function polindrom(word: string): boolean {
     }
 
     return true;
+}
+
+export function polindromBySplit(word: string) {
+    word = word.toLowerCase();
+    return word === word.split('').reverse().join('');
 }

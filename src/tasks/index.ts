@@ -1,5 +1,5 @@
 import { fibonachi, iterationFibonachi } from './1-fibonachi';
-import { polindrom } from './2-polindrom';
+import { polindrom, polindromBySplit } from './2-polindrom';
 
 export const tasks = () => {
     // fibonachi
@@ -8,4 +8,5 @@ export const tasks = () => {
 
     // polindrom
     console.log('polindrom -> ', polindrom('asdsa'));
+    console.log('polindromBySplit -> ', polindromBySplit('asdsa'));
 };
