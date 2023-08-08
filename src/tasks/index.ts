@@ -1,5 +1,6 @@
 import { fibonachi, iterationFibonachi } from './1-fibonachi';
 import { polindrom, polindromBySplit } from './2-polindrom';
+import { calcConsole } from './3-func';
 
 export const tasks = () => {
     // fibonachi
@@ -9,4 +10,7 @@ export const tasks = () => {
     // polindrom
     console.log('polindrom -> ', polindrom('asdsa'));
     console.log('polindromBySplit -> ', polindromBySplit('asdsa'));
+
+    // carring
+    calcConsole();
 };
