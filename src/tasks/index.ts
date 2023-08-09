@@ -4,6 +4,7 @@ import { calcConsole } from './3-func';
 import { cityDateToArray, concerts } from './4-city-date';
 import { matrix, perimetr } from './5-perimtr';
 import { withoutRepeat, arr } from './6-without-repeat';
+import { tree, treeSum } from './7-tree-sum';
 
 export const tasks = () => {
     // fibonachi
@@ -25,4 +26,7 @@ export const tasks = () => {
 
     // withoutRepeat O(N)
     console.log('withoutRepeat -> ', withoutRepeat(arr));
+
+    // treeSum
+    console.log('treeSum -> ', treeSum(tree));
 };
